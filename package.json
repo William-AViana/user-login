@@ -1,0 +1,29 @@
+{
+  "name": "user-login",
+  "version": "1.0.0",
+  "description": "Login de usuário com Node.Js",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/William-AViana/user-login.git"
+  },
+  "author": "William Viana",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/William-AViana/user-login/issues"
+  },
+  "homepage": "https://github.com/William-AViana/user-login#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "dotenv": "^16.0.0",
+    "express": "^4.18.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.3.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
