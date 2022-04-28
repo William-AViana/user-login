@@ -1,14 +1,14 @@
 require('dotenv').config();
-const express = require('express');
 const mongoose = require('mongoose');
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
+const http = require('http');
 
-const app = express();
+const server = http.createServer((req, res) => {
+  res.writeHead(200, { 'Content-Type': 'aplication/json' });
+  res.end(JSON.stringify({
+    msg: 'Bem vindo a API!'
+  }));
+});
 
-// Open route
-app.get('/', (req, res) => {
-  res.status(200).json({ msg: 'Bem vindo a API!' })
-})
-
-app.listen(3000)
+server.listen(3000)
