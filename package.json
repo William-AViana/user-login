@@ -2,7 +2,7 @@
   "name": "user-login",
   "version": "1.0.0",
   "description": "Login de usuário com Node.Js",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "start": "nodemon app.js"
   },
