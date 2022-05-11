@@ -1,8 +1,10 @@
-require('dotenv').config();
-const mongoose = require('mongoose');
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 const http = require('http');
+
+const connectToDataBase = require('./src/database/database')
+
+connectToDataBase();
 
 const server = http.createServer((req, res) => {
   res.writeHead(200, { 'Content-Type': 'aplication/json' });
